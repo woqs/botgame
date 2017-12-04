@@ -1,6 +1,6 @@
-#BotGame
+# BotGame
 
-##Requirements
+## Requirements
 
 You need to have the selenium and pyyaml libraries installed
 ```
@@ -13,7 +13,7 @@ cp conf.yml.example conf.yml
 ```
 Then complete the conf file with your user informations
 
-##Usage
+## Usage
 
 ```
 python app.py
