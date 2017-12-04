@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import yaml
 
 from navigate import login
+from empire_data import getPlanetList
 
 if __name__ == "__main__":
     with open("conf.yml", 'r') as ymlfile:
@@ -14,5 +15,6 @@ if __name__ == "__main__":
     driver.get(conf['url'])
 
     login(driver, conf)
+    planets = getPlanetList(driver)
 
-    driver.close()
+    #driver.close()

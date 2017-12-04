@@ -1,3 +1,4 @@
 conf.yml
 geckodriver.log
 */*.pyc
+*/__pycache__
