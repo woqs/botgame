@@ -3,8 +3,8 @@ from empire_data import populate
 
 class Planet():
     resources = {}
-    station = {}
     production = {}
+    station = {}
     fleet = {}
     defense = {}
     def __init__(self, id, name, coordinates):
