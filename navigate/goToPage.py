@@ -5,10 +5,10 @@ def goToOverview(driver):
     goTo(driver, 'overview')
 
 def goToResources(driver):
-    goTo(driver, 'overview')
+    goTo(driver, 'resources')
 
 def goToStation(driver):
-    goTo(driver, 'overview')
+    goTo(driver, 'station')
 
 def goToResearch(driver):
     goTo(driver, 'research')

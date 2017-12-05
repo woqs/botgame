@@ -1,8 +1,12 @@
-from navigate import login, goToPage
+from navigate import goToPage
+from empire_data import populate
 
 class Planet():
-    fleet = []
-    resources = []
+    resources = {}
+    station = {}
+    production = {}
+    fleet = {}
+    defense = {}
     def __init__(self, id, name, coordinates):
         self.id = id
         self.shortId = id.split('-')[1]
@@ -26,6 +30,9 @@ def populatePlanetData(driver, planets):
     populatedPlanets = []
     for planet in planets:
         goToPage.goToPlanet(driver, planet.id)
-        goToPage.goToDefense(driver)
+        populate.populateResources(driver, planet)
+        populate.populateStation(driver, planet)
+        populate.populateShipyard(driver, planet)
+        populate.populateDefense(driver, planet)
 
     return planets

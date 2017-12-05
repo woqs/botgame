@@ -15,6 +15,8 @@ if __name__ == "__main__":
     driver.get(conf['url'])
 
     login(driver, conf)
+    #mission = getMissions()
     planets = getPlanetList(driver)
+    #research = populateResearch(driver)
 
     #driver.close()
